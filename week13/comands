@@ -1,1 +1,33 @@
+1) create terraform folder  in VS CODE
+2)terraform installation( in windows cmd prompt)
+winget install Hashicorp.Terraform
+terraform -version
+
+
+2)main.tf in vs code
+terraform {
+  required_providers {
+    local = {
+      source  = "hashicorp/local"
+      version = "~> 2.5"
+    }
+  }
+}
+
+resource "local_file" "student" {
+  filename = "student.txt"
+  content  = "Hello Terraform - 23071A05B7"
+}
+
+
+
+3)in VS Code terminal
+terraform init
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
+terraform show
+terraform state list
+terraform destroy
 
