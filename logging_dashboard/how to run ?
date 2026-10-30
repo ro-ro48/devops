@@ -1,1 +1,14 @@
+1)npm install winston(vs code terminal)
 
+### STEP-2
+VS CODE terminal:
+node index.js
+Get-Content .\logs\app.log
+
+(OR)
+
+
+windows command prompt:
+
+curl.exe http://localhost:3000/students
+type logs\app.log
