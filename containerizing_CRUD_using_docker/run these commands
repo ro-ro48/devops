@@ -1,4 +1,19 @@
+after in Windows cmd prompt:
+
 docker build -t 23071A05B7-crud-app . 
 docker images 
 docker run -d -p 3000:3000 --name 23071A05B7-container 23071A05B7-crud-app 
 docker ps
+
+
+
+after in Windows cmd prompt:
+curl -X POST http://localhost:3000/students -H "Content-Type: application/json" -d "{\"id\":3,\"name\":\"Anjali\"}"
+curl http://localhost:3000/students
+curl http://localhost:3000/students/1
+
+curl -X POST http://localhost:3000/students -H "Content-Type: application/json" -d "{\"id\":3,\"name\":\"Anjali\"}"
+
+curl -X PUT http://localhost:3000/students/1 -H "Content-Type: application/json" -d "{\"name\":\"Ravi\"}"
+curl -X PATCH http://localhost:3000/students/2 -H "Content-Type: application/json" -d "{\"name\":\"Rahul Kumar\"}"
+curl -X DELETE http://localhost:3000/students/1
