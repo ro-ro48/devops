@@ -1,0 +1,4 @@
+docker build -t 23071A05B7-crud-app . 
+docker images 
+docker run -d -p 3000:3000 --name 23071A05B7-container 23071A05B7-crud-app 
+docker ps
